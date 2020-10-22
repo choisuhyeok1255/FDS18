@@ -235,8 +235,10 @@ a{
   float: left;
 }
 .group1{
-  background: blueviolet;
+  background: orange;
   width: 250px;
+  border-radius: 5px;
+  padding: 10px;
 }
 .group2{
   background: lightgreen;
