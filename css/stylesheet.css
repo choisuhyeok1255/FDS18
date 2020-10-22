@@ -2,13 +2,15 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
 /* 숨김 제목 및 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: 0px;
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0,0,0,0);
 }
 
 body *, 
@@ -233,12 +235,39 @@ a{
 .group{
   margin: 0 15px;
   float: left;
+  border-radius: 15px;
 }
 .group1{
   background: orange;
   width: 250px;
-  border-radius: 5px;
   padding: 10px;
+}
+.group1 fieldset{
+  padding:0;
+  margin:0;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.user-email, .user-pw{
+  float: left;
+}
+.group1 input {
+  width: 80px;
+}
+.group1 .btn-login{
+  float: right;
+}
+.login-member{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  background: #fff;
+  list-style: none;
+}
+ul li{
+  display: inline;
 }
 .group2{
   background: lightgreen;
