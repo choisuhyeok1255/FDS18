@@ -222,7 +222,7 @@ a {
   animation-fill-mode: forwards;
 }
 .main {
-  background: skyblue;
+  background: #fff;
   /* display: flex;
   flex-flow: row nowrap;
   justify-content: space-between; */
@@ -235,91 +235,142 @@ a {
   float: left;
 }
 .group1 {
-  background: linear-gradient(
-    to bottom,
-    #efa22f 0%,
-    #ed702d 35%,
-    #ed702d 70%,
-    #efa22f 100%
-  );
-  border-radius: 5px;
   width: 250px;
-  padding: 5px 10px 10px 10px;
-  margin-left: 15;
-  box-shadow:5px 5px 5px #aaa ;
-}
-.group1 .login-heading{
-  font-size: 1.5rem;
-  color: yellow;
-  padding: 0 0 0 10px;
-  margin: 10px 0;
-}
-fieldset{
-  border: 0;
-  background: #fff;
-  border-radius: 5px 5px 0 0;
-  width: 230px;
-  margin: 0;
-  padding-top: 10px;
-}
-label{
-  display: inline-block;
-  width: 55px;
-}
-.user-email, .user-pw{
-  float: left;
-}
-.user-email{
-  margin-bottom: 5px;
-}
-#userEmail, #userPw{
-  width : 100px;
-  margin-right: 5px;
-}
-.btn-login{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  font-size: 1.2rem;
-  color: white;
-  border: 0px;
-  border-radius: 5px;
-  background: linear-gradient(
-    to bottom,
-    #efa22f 0%,
-    #ed702d 35%,
-    #ed702d 70%,
-    #efa22f 100%
-  );
-}
-.login-member{
-  background-color: #fff;
-  margin: 0;
-  border-radius: 0 0 5px 5px;
-  width: 230px;
-  list-style: none;
-  padding: 15px 0;
-  font-size: 1.3rem;
-}
-.signup{
-  float: left;
-}
-.icon-right-open{
-  color: orange;
-}
-.signup{
-  margin-left: 10px;
-}
-.signup a{
-  margin-right: 10px;
 }
 .group2 {
-  background: lightgreen;
   width: 380px;
 }
 .group3 {
-  background: tomato;
   width: 190px;
+}
+/* 로그인 */
+.login{
+  background: radial-gradient(circle at right top, #efa22f, #ed702d);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 15px 10px;
+}
+.login-heading{
+  margin:0;
+  color: #ff0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.login-form{
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  background : #fff;
+  border-radius: 5px 5px 0 0;
+}
+.login-form fieldset{
+  border: 0;
+  border-bottom: 1px solid #000;
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+  position: relative;
+}
+.user-email , .user-pw {
+  margin-bottom: 5px;
+}
+.user-email *, .user-pw *{
+  vertical-align: middle;
+}
+.login-form label{
+  width: 4em;
+  display: inline-block;
+}
+.login-form input{
+  width: 90px;
+  height: 22px;
+  border: 1px solid #ccc;
+  padding: 1px 1px 1px 0.5em;
+}
+.btn-login{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0 5px;
+  border: 0;
+  border-radius: 3px;
+  background: #ed702d;
+  color: #fff;
+
+}
+.login-member{
+  background: #fff;
+  padding: 2px 10px;
+  margin:0;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  letter-spacing: -1px;
+}
+.login-member li{
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.login-member .icon-right-open{
+  color: #ed702d;
+}
+.login-member a{
+  display: block;
+  padding: 8px 0;
+}
+/* 유효성 검사배너 */
+.validation-list{
+  margin: 25px 0 0 0;
+  list-style-type: none;
+  padding-left :0;
+}
+
+.validation-list a{
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  background: url(./images/validation_icon.png) no-repeat 25px 50%/ 20px 20px, linear-gradient(to bottom, #eee, #ccc);
+  padding: 8px 10px 8px 50px;
+  margin-top: 10px;
+}
+
+.validation-list a:hover, .validation-list :focus{
+  color: #f00;
+}
+.term{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-right: 10px;
+  background: linear-gradient(to top, #eee, #ccc);
+}
+.term-heading{
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-left: 16px;
+}
+.term-list{
+  position: relative;
+}
+.term-subject{
+  margin : 0 0 5px 85px;
+  color: #296897;
+}
+.term-thumbnail{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 16px;
+  margin: 0;
+}
+.term-brief{
+  padding-left: 45px;
+  font-size: 14px;
 }
 .slogan {
   background: orange;
