@@ -762,7 +762,77 @@ a {
 .news-more::before {
   color: hsla(110, 30%, 50%, 1);
 }
+/*  신규 이벤트 및 관련사이트 */
+.gradient-box{
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+}
+.event{
+  position: relative;
+}
+.event-heading, .related-heading{
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+.point-color{
+  color: #ed702d;
+}
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #aaa;
+}
+.event-brief{
+  line-height: 1.5;
+}
+.event-brief em{
+  font-style: normal;
+}
+.btn-event{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-prev, .btn-next{
+  border: 0;
+  overflow: hidden;
+  height: 18px;
+  padding: 18px 0 0 0;
+  width: 19px;
+  background: transparent url(./images/back_forward.png) 0 0 no-repeat;
+}
+.btn-next{
+  background-position: -36px 0 !important;
+}
 
+/* 연습하기 */
+/* .gradient-box{
+  background : silver;
+  border-radius: 5px;
+  padding: 10px;
+}
+.event{
+  position: relative;
+}
+.btn-prev{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  background-image: url("/css/images/back_forward.png");
+  width: 19px;
+  height: 18px;
+}
+.btn-next{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/css/images/back_forward.png");
+  width: 19px;
+  height: 18px;
+} */
+/* 연습 끝 */
 .slogan {
   background: orange;
 }
