@@ -455,6 +455,35 @@ a {
 .term-list div:nth-child(even) .term-list-thumbnail {
   float: right;
 }
+/* 웹 관련 용어 끝 */
+/* 웹 관련 용어 연습 */
+/* .term {
+  border: 1px solid #aaa;
+  background: linear-gradient(#ccc, #eee);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.term-list-subject{
+  background: yellow;
+  width: 100px;
+  display: inline-block;
+}
+.term-list-thumbnail{
+  background: tomato;
+  float: left;
+  margin: 0;
+}
+.term-list-brief{
+  background: pink;
+  margin-top: 10px;
+  padding-left: 60px;
+}
+.term-list-subject,
+.term-list-brief{
+  margin-left: 10px;
+} */
+/* 웹 관련 용어 연습 끝 */
 
 /* 내가해봄
 .group2 fieldset{
@@ -478,7 +507,6 @@ a {
   padding : 1px 6px;
 }
 */
-
 /* 검색 폼 */
 .search-form {
   background: #ccc linear-gradient(#ccc, #eee);
